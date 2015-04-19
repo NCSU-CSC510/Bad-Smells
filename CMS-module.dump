@@ -1,0 +1,136 @@
+ISSUE 1
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1424901883.0,	when : 2015-02-25T22:04:43Z
+what : Closed,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1424901883.0,	when : 2015-02-25T22:04:43Z
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1423937700.0,	when : 2015-02-14T18:15:00Z
+
+ISSUE 2
+what : BDD Implementation,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1426443572.0,	when : 2015-03-15T18:19:32Z
+what : Closed,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1426443572.0,	when : 2015-03-15T18:19:32Z
+what : BDD Spec,	user : anishashetty,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1425247113.0,	when : 2015-03-01T21:58:33Z
+what : BDD Implementation,	user : anishashetty,	milestone : M0 Milestone,	action : labeled,	whenms : 1425247113.0,	when : 2015-03-01T21:58:33Z
+what : Feature Identification,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1424901771.0,	when : 2015-02-25T22:02:51Z
+what : BDD Spec,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1424901771.0,	when : 2015-02-25T22:02:51Z
+what : Feature Identification,	user : anishashetty,	milestone : M0 Milestone,	action : labeled,	whenms : 1423938389.0,	when : 2015-02-14T18:26:29Z
+
+ISSUE 3
+what : BDD Spec,	user : SohanK,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425401322.0,	when : 2015-03-03T16:48:42Z
+what : BDD Implementation,	user : SohanK,	milestone : M1 Milestone,	action : labeled,	whenms : 1425401322.0,	when : 2015-03-03T16:48:42Z
+what : Feature Identification,	user : SohanK,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1424921283.0,	when : 2015-02-26T03:28:03Z
+what : BDD Spec,	user : SohanK,	milestone : M1 Milestone,	action : labeled,	whenms : 1424921269.0,	when : 2015-02-26T03:27:49Z
+what : Feature Identification,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1423938503.0,	when : 2015-02-14T18:28:23Z
+
+ISSUE 4
+what : BDD Implementation,	user : anlawande,	action : unlabeled,	whenms : 1427647396.0,	when : 2015-03-29T16:43:16Z
+what : Closed,	user : anlawande,	action : labeled,	whenms : 1427647396.0,	when : 2015-03-29T16:43:16Z
+what : BDD Spec,	user : anlawande,	action : unlabeled,	whenms : 1427300733.0,	when : 2015-03-25T16:25:33Z
+what : BDD Implementation,	user : anlawande,	action : labeled,	whenms : 1427300733.0,	when : 2015-03-25T16:25:33Z
+what : Feature Identification,	user : anlawande,	action : unlabeled,	whenms : 1427224165.0,	when : 2015-03-24T19:09:25Z
+what : BDD Spec,	user : anlawande,	action : labeled,	whenms : 1427224165.0,	when : 2015-03-24T19:09:25Z
+what : Feature Identification,	user : anishashetty,	action : labeled,	whenms : 1423938535.0,	when : 2015-02-14T18:28:55Z
+
+ISSUE 5
+what : BDD Implementation,	user : anishashetty,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1427142989.0,	when : 2015-03-23T20:36:29Z
+what : Closed,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1427142989.0,	when : 2015-03-23T20:36:29Z
+what : BDD Spec,	user : anishashetty,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1427139792.0,	when : 2015-03-23T19:43:12Z
+what : BDD Implementation,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1427139792.0,	when : 2015-03-23T19:43:12Z
+what : BDD Implementation,	user : anishashetty,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1426358923.0,	when : 2015-03-14T18:48:43Z
+what : BDD Spec,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1426358923.0,	when : 2015-03-14T18:48:43Z
+what : Feature Identification,	user : anishashetty,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1426358480.0,	when : 2015-03-14T18:41:20Z
+what : BDD Implementation,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1426358480.0,	when : 2015-03-14T18:41:20Z
+what : Feature Identification,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1423938550.0,	when : 2015-02-14T18:29:10Z
+
+ISSUE 6
+what : BDD Spec,	user : anishashetty,	action : unlabeled,	whenms : 1427482670.0,	when : 2015-03-27T18:57:50Z
+what : BDD Implementation,	user : anishashetty,	action : labeled,	whenms : 1427482670.0,	when : 2015-03-27T18:57:50Z
+what : Feature Identification,	user : anishashetty,	action : unlabeled,	whenms : 1427225710.0,	when : 2015-03-24T19:35:10Z
+what : BDD Spec,	user : anishashetty,	action : labeled,	whenms : 1427225710.0,	when : 2015-03-24T19:35:10Z
+what : Feature Identification,	user : anishashetty,	action : labeled,	whenms : 1423938584.0,	when : 2015-02-14T18:29:44Z
+
+ISSUE 7
+what : BDD Implementation,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1426443466.0,	when : 2015-03-15T18:17:46Z
+what : Closed,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1426443466.0,	when : 2015-03-15T18:17:46Z
+what : BDD Spec,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1426177461.0,	when : 2015-03-12T16:24:21Z
+what : BDD Implementation,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1426177461.0,	when : 2015-03-12T16:24:21Z
+what : Feature Identification,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1426117923.0,	when : 2015-03-11T23:52:03Z
+what : BDD Spec,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1426117923.0,	when : 2015-03-11T23:52:03Z
+what : Feature Identification,	user : anishashetty,	milestone : M0 Milestone,	action : labeled,	whenms : 1423938599.0,	when : 2015-02-14T18:29:59Z
+
+ISSUE 8
+what : Feature Identification,	user : anlawande,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1426443730.0,	when : 2015-03-15T18:22:10Z
+what : Closed,	user : anlawande,	milestone : M1 Milestone,	action : labeled,	whenms : 1426443730.0,	when : 2015-03-15T18:22:10Z
+what : Feature Identification,	user : anishashetty,	milestone : M1 Milestone,	action : labeled,	whenms : 1423938620.0,	when : 2015-02-14T18:30:20Z
+
+ISSUE 9
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1425235422.0,	when : 2015-03-01T18:43:42Z
+what : Closed,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1425235422.0,	when : 2015-03-01T18:43:42Z
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1423938754.0,	when : 2015-02-14T18:32:34Z
+
+ISSUE 10
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1426112807.0,	when : 2015-03-11T22:26:47Z
+what : Closed,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1426112807.0,	when : 2015-03-11T22:26:47Z
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1423939023.0,	when : 2015-02-14T18:37:03Z
+
+ISSUE 11
+what : Open,	user : anlawande,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1426443641.0,	when : 2015-03-15T18:20:41Z
+what : Closed,	user : anlawande,	milestone : M1 Milestone,	action : labeled,	whenms : 1426443641.0,	when : 2015-03-15T18:20:41Z
+what : Open,	user : anlawande,	milestone : M1 Milestone,	action : labeled,	whenms : 1423940142.0,	when : 2015-02-14T18:55:42Z
+
+ISSUE 12
+what : Open,	user : ptrived,	milestone : M0 Milestone,	action : unlabeled,	whenms : 1425934225.0,	when : 2015-03-09T20:50:25Z
+what : Closed,	user : ptrived,	milestone : M0 Milestone,	action : labeled,	whenms : 1425934225.0,	when : 2015-03-09T20:50:25Z
+what : Open,	user : anlawande,	milestone : M0 Milestone,	action : labeled,	whenms : 1424025547.0,	when : 2015-02-15T18:39:07Z
+
+ISSUE 13
+what : Approach Comparison,	user : anlawande,	milestone : Approach Comparison of TDD vs BDD,	action : unlabeled,	whenms : 1428411403.0,	when : 2015-04-07T12:56:43Z
+what : Closed,	user : anlawande,	milestone : Approach Comparison of TDD vs BDD,	action : labeled,	whenms : 1428411403.0,	when : 2015-04-07T12:56:43Z
+what : Approach Comparison,	user : ptrived,	milestone : Approach Comparison of TDD vs BDD,	action : labeled,	whenms : 1424324043.0,	when : 2015-02-19T05:34:03Z
+
+ISSUE 14
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425235100.0,	when : 2015-03-01T18:38:20Z
+what : Feature Identification,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425235100.0,	when : 2015-03-01T18:38:20Z
+what : TDD Spec,	user : ptrived,	milestone : M1 Milestone,	action : labeled,	whenms : 1425071544.0,	when : 2015-02-27T21:12:24Z
+
+ISSUE 15
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425235093.0,	when : 2015-03-01T18:38:13Z
+what : Feature Identification,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425235081.0,	when : 2015-03-01T18:38:01Z
+what : TDD Spec,	user : ptrived,	milestone : M1 Milestone,	action : labeled,	whenms : 1425071560.0,	when : 2015-02-27T21:12:40Z
+
+ISSUE 16
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425235069.0,	when : 2015-03-01T18:37:49Z
+what : Feature Identification,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425235069.0,	when : 2015-03-01T18:37:49Z
+what : Feature Identification,	user : ptrived,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425075707.0,	when : 2015-02-27T22:21:47Z
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425074834.0,	when : 2015-02-27T22:07:14Z
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425074718.0,	when : 2015-02-27T22:05:18Z
+what : Feature Identification,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425074718.0,	when : 2015-02-27T22:05:18Z
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425073241.0,	when : 2015-02-27T21:40:41Z
+
+ISSUE 17
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425235040.0,	when : 2015-03-01T18:37:20Z
+what : Feature Identification,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425235040.0,	when : 2015-03-01T18:37:20Z
+what : Feature Identification,	user : ptrived,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425075707.0,	when : 2015-02-27T22:21:47Z
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425074847.0,	when : 2015-02-27T22:07:27Z
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : unlabeled,	whenms : 1425074699.0,	when : 2015-02-27T22:04:59Z
+what : Feature Identification,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425074699.0,	when : 2015-02-27T22:04:59Z
+what : TDD Spec,	user : rroycho,	milestone : M1 Milestone,	action : labeled,	whenms : 1425073367.0,	when : 2015-02-27T21:42:47Z
+
+ISSUE 19
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1426910334.0,	when : 2015-03-21T03:58:54Z
+
+ISSUE 20
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1426910370.0,	when : 2015-03-21T03:59:30Z
+
+ISSUE 21
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1426910466.0,	when : 2015-03-21T04:01:06Z
+
+ISSUE 22
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1427470526.0,	when : 2015-03-27T15:35:26Z
+
+ISSUE 23
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1427470566.0,	when : 2015-03-27T15:36:06Z
+
+ISSUE 24
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1427470595.0,	when : 2015-03-27T15:36:35Z
+
+ISSUE 25
+what : TDD Implementation,	user : ptrived,	milestone : M2 Milestone,	action : labeled,	whenms : 1427471150.0,	when : 2015-03-27T15:45:50Z
+
