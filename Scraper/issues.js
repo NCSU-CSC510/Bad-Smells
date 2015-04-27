@@ -38,7 +38,7 @@ createRequest();
 function createRequestP (num) {
 	return new Promise(function(resolve, reject) {
 		request({
-			url: "https://api.github.com/repos/incognito666/tarantula-python/issues/events?page=" + num,
+			url: "https://api.github.com/repos/bighero4/MarkParser/issues/events?page=" + num,
 			headers: headers,
 			gzip: true
 		}, function(err, resp, body) {
