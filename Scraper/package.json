@@ -1,0 +1,18 @@
+{
+  "name": "Scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "issues.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aniket Lawande <anlawande@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fast-stats": "0.0.2",
+    "node-linq": "0.0.5",
+    "promise": "^7.0.1",
+    "promise-pc": "^1.1.0",
+    "request": "^2.55.0"
+  }
+}
