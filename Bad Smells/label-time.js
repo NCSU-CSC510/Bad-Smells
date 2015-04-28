@@ -2,29 +2,29 @@ var LINQ = require('node-linq').LINQ;
 var Stats = require('fast-stats').Stats;
 var fs = require("fs");
 
-var issuesArr = [];
+var projectArr = [];
 var projectNum = 1;
 
 var issues = JSON.parse(fs.readFileSync("../Scraper/CMS-module.json", {encoding: "utf8"}));
-issuesArr.push({
+projectArr.push({
 	"project": "P" + projectNum++,
 	"issues": issues
 })
 var issues = JSON.parse(fs.readFileSync("../Scraper/Tarantula.json", {encoding: "utf8"}));
-issuesArr.push({
+projectArr.push({
 	"project": "P" + projectNum++,
 	"issues": issues
 })
 var issues = JSON.parse(fs.readFileSync("../Scraper/MarkParser.json", {encoding: "utf8"}));
-issuesArr.push({
+projectArr.push({
 	"project": "P" + projectNum++,
 	"issues": issues
 })
 
 
-for(var i = 0; i < 1; i++) {
-	console.log(issuesArr[i].project);
-	var issues = new LINQ(issuesArr[i].issues);
+for(var i = 0; i < projectArr.length; i++) {
+	console.log(projectArr[i].project);
+	var issues = new LINQ(projectArr[i].issues);
 	var issuesArr = [];
 
 	issues = issues.GroupBy(function(x) {return x.issue.number});
@@ -62,9 +62,7 @@ for(var i = 0; i < 1; i++) {
 	}
 	
 	var s = new Stats();
-	var mean, stddev;
-	
-	console.log(issuesArr);
+	var mean, stddev ;
 	
 	for(var k = 0; k < issuesArr.length; k++) {
 		var labelsArr = issuesArr[k].labels;
@@ -72,18 +70,26 @@ for(var i = 0; i < 1; i++) {
 			s.push(labelsArr[j].diff);
 		}
 	}
+	mean = s.amean();
+	stddev = s.stddev();
 	
-	console.log(s.amean().toFixed(2));
-	console.log(s.stddev().toFixed(2));
+	console.log("Mean: %d Standard Deviation: %d", s.amean().toFixed(2), s.stddev().toFixed(2));
 	
 	for(var k = 0; k < issuesArr.length; k++) {
 		var labelsArr = issuesArr[k].labels;
+		if(labelsArr.length > 0)
+			console.log(issuesArr[k].number);
 		for(var j = 0; j < labelsArr.length; j++) {
-			labelsArr[j].bad = false;
-			if(labelsArr[j].diff > mean + 1.5*stddev || labelsArr[j].diff < mean + 1.5*stddev)
-				labelsArr[j].bad = true;
+			labelsArr[j].badUp = false;
+			labelsArr[j].badDown = false;
+			if(labelsArr[j].diff > mean + stddev)
+				labelsArr[j].badUp = true;
+			if(labelsArr[j].diff < mean - stddev)
+				labelsArr[j].badDown = true;
 			
-			console.log("%s|%d|%s", labelsArr[j].name, labelsArr[j].diff, labelsArr[j].bad);
+			console.log("%s|%d|%s|%s", labelsArr[j].name, labelsArr[j].diff.toFixed(2), labelsArr[j].badUp, labelsArr[j].badDown);
 		}
 	}
+	
+	console.log("");
 }
