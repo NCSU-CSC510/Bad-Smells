@@ -60,7 +60,7 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 ##Feature Detection and Results
 **1. Commit Distribution**
 In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines. 
-Results :
+***Results :***
 
 **2. No passenger**
 The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits 
