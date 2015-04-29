@@ -25,7 +25,7 @@ To anonymize the data, we numbered each project as Project1, Project2 and Projec
 
 ##Feature Detection
 
-#Feature Detection Results
+##Feature Detection Results
 
 ##Bad Smells Detector
 
