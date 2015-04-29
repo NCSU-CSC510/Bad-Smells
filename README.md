@@ -57,7 +57,7 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 
 **11. Milestone issues**
 
-##Feature Detection
+##Feature Detection and Results
 **1. Commit Distribution**
 
 **2. No passenger**
@@ -80,7 +80,7 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 
 **11. Milestone issues**
 
-##Feature Detection Results
+##Bad Smells Detector and Results
 **1. Commit Distribution**
 
 **2. No passenger**
@@ -103,52 +103,6 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 
 **11. Milestone issues**
 
-##Bad Smells Detector
-**1. Commit Distribution**
-
-**2. No passenger**
-
-**3. No great dictator**
-
-**4. Assignment of issues**
-
-**5. Issues skipped**
-
-**6. No overused label**
-
-**7. Redundant/useless labels**
-
-**8. Too much time spent on a label**
-
-**9. Very less times spent on a label**
-
-**10. Milestones overdue**
-
-**11. Milestone issues**
-
-##Bad Smells Results
-
-**1. Commit Distribution**
-
-**2. No passenger**
-
-**3. No great dictator**
-
-**4. Assignment of issues**
-
-**5. Issues skipped**
-
-**6. No overused label**
-
-**7. Redundant/useless labels**
-
-**8. Too much time spent on a label**
-
-**9. Very less times spent on a label**
-
-**10. Milestones overdue**
-
-**11. Milestone issues**
 
 ##Early Warning
 
