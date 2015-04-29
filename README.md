@@ -14,7 +14,7 @@ TO ADD :
 5. Milestone Data Collection
 
 ##Anonymization
-To anonymize the data, we numbered each project as Project1, Project2 and Project3 and also numbered the users in a project as person1, person2 etc.
+To anonymize the data, we numbered each project as Project1, Project2 and Project3 and also numbered the users in a project as user1, user2, user3 etc.
 
 ##Tables
 
