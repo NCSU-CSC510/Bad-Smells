@@ -390,8 +390,23 @@ The results are represented as graphs below:
 **Std deviation :** 13.84
 
 **2. No passenger**
+In this feature we have collected data about number of commits per user. So if the number of commits is less than 10% of the total, then that user is under "no passenger" category.
 
+<br>*Criteria:*
+
+        no_of_commits < 0.1 * total_commits
 ***Results :***
+The results are represented as graphs below:
+As all the percentages were more than 10%, there was no bad smell, in this feature.
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
 
 **3. No great dictator**
 
@@ -424,43 +439,10 @@ The results are represented as graphs below:
 **10. Milestones with fewer issues**
 
 ***Results :***
-The results are represented as graphs below:
-
-*Project 1*
-![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P1.png)
-**Mean :** 5.50
-**Std deviation :** 2.69
-
-*Project 2*
-![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P2.png)
-**Mean :** 2.75
-**Std deviation :** 2.05
-	
-*Project 3*
-![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P3.png)
-**Mean :** 7.80
-**Std deviation :** 4.62
 
 **11. Milestone with too many issues**
 
 ***Results :***
-The results are represented as graphs below:
-
-*Project 1*
-![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P1.png)
-**Mean :** 5.50
-**Std deviation :** 2.69
-
-*Project 2*
-![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P2.png)
-**Mean :** 2.75
-**Std deviation :** 2.05
-	
-*Project 3*
-![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P3.png)
-**Mean :** 7.80
-**Std deviation :** 4.62
-
 
 ##Early Warning
 We have created a detector that detects if a developer is overloaded or underloaded with respect to the number of issues assigned to him/her.
