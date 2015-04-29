@@ -164,9 +164,10 @@ To anonymize the data, we numbered each project as P1, P2 and P3 and also number
 After the data collection phase, we have stored the data in a excel spreadsheet. The data for each project was anonymized based on the above mentioned scheme. Also, the data was separated based on the features as presented below. After categorizing the data into different features, we calculated the mean and the statndard deviation for each project per feature. The data was analyzed and all the values which differ the mean by 1.5 times the standard deviation were marked. After analyzing the data, we have plotted graphs for each feature.
 
 ##Data
+Following is the summary of the data collected. 
 |S.No|Feature|Project1|Project2|Project3|
 |------|-------|--------------|--------------|--------------|
-|1|Commit Distribution|0|0|0|
+|1|Commit Distribution|12|12|12|
 |2|No passenger|0|0|0|
 |3|No great dictator|0|0|0|
 |4|Assignment of issues|0|0|0|
@@ -180,6 +181,13 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 
 ##Data Samples
 **1. Commit Distribution**
+Sample data table :
+
+|S.No|Week|Number of commits|
+|------|-------|--------------|
+|1|Week 1|2|
+|2|Week 2|7|
+
 
 **2. No passenger**
 
@@ -206,6 +214,8 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines.
 
 ***Results :***
+The following is the link to data collected. There three different sheets for each project.
+* [Commit Distribution](Data/Commit%20Distribution.xlsx)
 
 **2. No passenger**
 The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits 
