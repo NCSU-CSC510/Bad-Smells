@@ -376,17 +376,17 @@ The graphs for the bad smell results are below:
     *Project 1*
     ![](./graphs/num_of_commits/NumOfCommits_P1.png)<br>
     **Mean:** 8.33 <br>
-    **Std Dev.:** 11.34<br>
+    **Std Dev.:** 11.34
     
     *Project 2*
     ![](./graphs/num_of_commits/NumOfCommits_P2.png)<br>
     **Mean:** 5 <br>
-    **Std Dev.:** 5.03<br>
+    **Std Dev.:** 5.03
     
     *Project 3*
     ![](./graphs/num_of_commits/NumOfCommits_P3.png)<br>
     **Mean:** 8.42 <br>
-    **Std Dev.:** 13.84<br>
+    **Std Dev.:** 13.84
 
 **2. No passenger**
 
