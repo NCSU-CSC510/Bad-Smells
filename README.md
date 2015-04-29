@@ -6,12 +6,156 @@
 
 ##Data Collection
 
-TO ADD : 
 1. How data was collected
+
+  First, a dump of the git data was colected using the git API for nodejs. This data acted as the base database .
+  Data for each project being analysed is stored in a seperate [Project-name].json file.
+
+  Code snippet used to query this data is as below:
+  ```nodejs
+  return new Promise(function(resolve, reject) {
+		request({
+			url: "https://api.github.com/repos/[Project-name]]/issues/events?page=" + num,
+			headers: headers,
+			gzip: true
+		}, function(err, resp, body) {
+			if(err) {
+				console.log(err);
+				reject();
+				return;
+			}
+			var arr = JSON.parse(body);
+			issuesArr = issuesArr.concat(arr);
+			resolve(arr.length);
+  ```
+
+  The data is stored in JSON format .
+  For each of the bad smell detector created, the nodejs package LINQ is used to query the base database.
+
 2. Issue Data Collection
+
+    For this category of bad smells detector,  the scripts [issues-skipped.js](Bad Smells/issues-skipped.js) and [issues-assigned.js](Bad Smells/issues-assigned.js).
+
+    The data is grouped by issues for each project and analysis is performed.
+
+    ```nodejs
+    for(var i = 0; i < projectArr.length; i++) {
+    	console.log(projectArr[i].project);
+    	var issues = new LINQ(projectArr[i].issues);
+
+    	issues = issues.GroupBy(function(x) {return x.issue.number});
+
+    	for(var issue in issues) {
+    		var iss = issues[issue][0];
+
+    		if(iss.issue.milestone) {
+    			var skipped = new Date(iss.issue.closed_at) > new Date(iss.issue.milestone.due_on);
+    			console.log("Issue %d|%s|%s|%s", issue, iss.issue.closed_at, iss.issue.milestone.due_on, skipped);
+    		}
+    	}
+    ```
 3. Label Data Collection
+
+  For this category of bad smells detector,the scripts [label-distributin.js](Bad Smells/label-distributon.js) and [label-time.js](Bad Smells/label-time.js) are used
+
+  The data is grouped by labels for each project and analysis is performed.
+
+  ```nodejs
+  for(var i = 0; i < issuesArr.length; i++) {
+  	console.log(issuesArr[i].project);
+  	var issues = new LINQ(issuesArr[i].issues);
+
+  	issues = issues.Where(function(x) {return x.event === "labeled"}).GroupBy(function(x) {return x.label.name});
+
+  	var s = new Stats();
+  	var mean, stddev;
+
+  	for (var a in issues) {
+  		s.push(issues[a].length);
+  	}
+
+  	mean = s.amean();
+  	stddev = s.stddev();
+  	console.log("Mean: " + mean.toFixed(2) + " Standard Deviation: " + stddev.toFixed(2));
+
+  	for (var a in issues) {
+  		var bad = issues[a].length > mean + 1.5*stddev || issues[a].length < mean - 1.5*stddev;
+  		console.log("%s|%d|%s", a, issues[a].length, bad);
+  	}
+
+  	console.log("");
+  }
+  ```
+
 4. Commit Data Collection
+
+  For this category of bad smells detector,the scripts [commits.js](Scraper/commits.js) is used
+
+  ```nodejs
+  for(var i = 0; i < commitsArr.length; i++) {
+  	var commits = commitsArr[i];
+  	var commitPerc = {};
+  	userNum = 1;
+
+  	var totalCommits = 0;
+
+  	commits.map(function(x) {
+  		for(var i = 0; i < x.weeks.length; i++) {
+  			totalCommits += x.weeks[i].c;
+  		}
+  	})
+
+  	commits.map(function(x) {
+  		var userCommits = 0;
+  		for(var i = 0; i < x.weeks.length; i++)
+  			userCommits += x.weeks[i].c;
+
+  		var commitPercent = parseFloat((userCommits / totalCommits) * 100);
+  		commitPerc["User"+userNum++] = {
+  			perc: commitPercent.toFixed(2),
+  			badUp: commitPercent > upperThreshold,
+  			badDown: commitPercent < lowerThreshold
+  		};
+  	});
+
+  ```
+
+  The data is grouped by commits for each project and analysis is performed.
+
 5. Milestone Data Collection
+
+  For this category of bad smells detector,the script [milestone-issues.js](Bad Smells/milestone-issues.js) is used
+
+  ```nodejs
+  for(var i = 0; i < projectArr.length; i++) {
+  	console.log(projectArr[i].project);
+  	var issues = new LINQ(projectArr[i].issues);
+  	var s = new Stats();
+  	var mean, stddev;
+
+  	var milestones = issues.Select(function(x) {return x.issue.milestone}).Where(function(x) {return x !== null}).GroupBy(function(x) { if(x) return x.number});
+
+  	for (var mile in milestones) {
+  		var milestone = milestones[mile][0];
+  		s.push(milestone.open_issues + milestone.closed_issues);
+  	}
+
+  	mean = s.amean();
+  	stddev = s.stddev();
+
+  	console.log("Mean: " + mean.toFixed(2) + " Standard Deviation: " + stddev.toFixed(2));
+
+  	for (var mile in milestones) {
+  		var milestone = milestones[mile][0];
+  		var over = milestone.open_issues + milestone.closed_issues > mean + stddev;
+  		var under = milestone.open_issues + milestone.closed_issues < mean - stddev;
+  		console.log("Milestone %d|%d|%s|%s", mile, milestone.open_issues + milestone.closed_issues, over, under);
+  	}
+
+  	console.log("");
+  }
+  ```
+
 
 ##Anonymization
 To anonymize the data, we numbered each project as P1, P2 and P3 and also numbered the users in a project as user1, user2, user3 etc. Withing each project to analyze the various labels, we have named the labels as L1,L2,L3 etc.
