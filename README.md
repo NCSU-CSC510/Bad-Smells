@@ -454,9 +454,26 @@ The results are represented as graphs below
 
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p3.png)
-**6. Label**
+
+**6. Label Distribution**
 
 ***Results :***
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/label_distribution/Project1.png)
+**Mean :** 7.00
+**Std deviation :** 3.43
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/label_distribution/Project2.png)
+**Mean :** 6.48
+**Std deviation :** 6.00
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/label_distribution/Project3.png)
+**Mean :** 4.36
+**Std deviation :** 5.31
 
 **7. Milestones overdue**
 
