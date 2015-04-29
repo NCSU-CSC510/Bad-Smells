@@ -365,8 +365,28 @@ The following is the link to data collected. There are three different sheets fo
 
 ##Bad Smells Detector and Results
 **1. Commit Distribution**
+In this feature we have collected data about number of commits per week. So if the number of commits differ the mean by 1.5 times the standard deviation, we mark it as bad smell.
 
+<br>*Criteria:*
+
+        no_of_commits > mean + 1.5 * standard_deviation 
+        OR  no_of_commits < mean + 1.5 * standard_deviation
 ***Results :***
+The graphs for the bad smell results are below:
+    *Project 1*
+    ![](./graphs/num_of_commits/NumOfCommits_P1.png)<br>
+    **Mean:** 8.33 <br>
+    **Std Dev.:** 11.34<br>
+    
+    *Project 2*
+    ![](./graphs/num_of_commits/NumOfCommits_P2.png)<br>
+    **Mean:** 5 <br>
+    **Std Dev.:** 5.03<br>
+    
+    *Project 3*
+    ![](./graphs/num_of_commits/NumOfCommits_P3.png)<br>
+    **Mean:** 8.42 <br>
+    **Std Dev.:** 13.84<br>
 
 **2. No passenger**
 
