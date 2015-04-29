@@ -373,20 +373,20 @@ In this feature we have collected data about number of commits per week. So if t
         OR  no_of_commits < mean + 1.5 * standard_deviation
 ***Results :***
 The results are represented as graphs below:
-	*Project 1*
-	![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P1.png)
-	**Mean :** 8.33
-	**Std deviation :** 11.34
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P1.png)
+**Mean :** 8.33
+**Std deviation :** 11.34
 
 *Project 2*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P2.png)
 **Mean :** 5.00
 **Std deviation :** 5.03
 	
-	*Project 3*
-	![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P3.png)
-	**Mean :** 8.42
-	**Std deviation :** 13.84
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P3.png)
+**Mean :** 8.42
+**Std deviation :** 13.84
 
 **2. No passenger**
 
