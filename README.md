@@ -172,11 +172,11 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 |4|Assignment of issues|27|30|60|
 |5|Issues skipped|22|22|39|
 |6|Label distribution|8|23|14|
-|7|Milestones overdue|0|0|0|
+|7|Milestones overdue|4|6|5|
 |8|Too much time spent on a label|48|15|74|
 |9|Very less times spent on a label|48|15|74|
-|10|Milestones with fewer issues|0|0|0|
-|11|Milestone with too many issues|0|0|0|
+|10|Milestones with fewer issues|4|8|5|
+|11|Milestone with too many issues|4|8|5|
 
 ##Data Samples
 **1. Commit Distribution**
@@ -236,6 +236,14 @@ Sample data table :
 
 **7. Milestones overdue**
 
+Sample data table :
+
+|S.No|Milestone|Due on|Closed on|Exceeded|
+|------|-------|--------------|------------|-------|
+|1|Milestone 1||3/15/2015 4:00|3/30/2015 5:39|True|
+|2|Milestone 2|3/31/2015 4:00|4/1/2015 5:58|True|
+
+
 **8. Too much time spent on a label**
 
 Sample data table :
@@ -260,7 +268,22 @@ Sample data table :
 
 **10. Milestones with fewer issues**
 
+Sample data table :
+
+|S.No|Milestone|No. of Issues|Under|
+|------|-------|--------------|------------|-------|
+|1|Milestone 1|1|True|
+|2|Milestone 2|6|False|
+
+
 **11. Milestone with too many issues**
+
+Sample data table :
+
+|S.No|Milestone|No. of Issues|Over|
+|------|-------|--------------|------------|-------|
+|1|Milestone 1|1|False|
+|2|Milestone 2|6|True|
 
 ##Feature Detection and Results
 **1. Commit Distribution**
@@ -309,6 +332,8 @@ The following is the link to data collected. There are three different sheets fo
 In this feature we have analzed expected closing time and the actual closing time for each milestone.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Milestone overdue](Data/Milestone%20Skipped.xlsx)
 
 **8. Too much time spent on a label**
 In this feature we have analyzed the time spent by each issues in differen labels so as to determine there were no labels on which most of the issues spent most of the time.
@@ -328,11 +353,15 @@ The following is the link to data collected. There are three different sheets fo
 In this feature we have analyzed the number of issues per milestone so as to determine that there are no milestone with zero or very few issues.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Milestone with less issues](Data/Milestones%20Issues_Under.xlsx)
 
 **11. Milestone with too many issues**
 In this feature we have analyzed the number of issues per milestone so as to determine the milestone which had most of the issues attached with them
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Milestone with many issues](Data/Milestones%20Issues_Above.xlsx)
 
 ##Bad Smells Detector and Results
 **1. Commit Distribution**
