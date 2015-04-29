@@ -424,6 +424,22 @@ The results are represented as graphs below:
 **10. Milestones with fewer issues**
 
 ***Results :***
+The results are represented as graphs below:
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P1.png)
+**Mean :** 5.50
+**Std deviation :** 2.69
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P2.png)
+**Mean :** 2.75
+**Std deviation :** 2.05
+	
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P3.png)
+**Mean :** 7.80
+**Std deviation :** 4.62
 
 **11. Milestone with too many issues**
 
