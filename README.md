@@ -173,8 +173,8 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 |5|Issues skipped|22|22|39|
 |6|Label distribution|8|23|14|
 |7|Milestones overdue|0|0|0|
-|8|Too much time spent on a label|-|-|-|
-|9|Very less times spent on a label|0|0|0|
+|8|Too much time spent on a label|48|15|74|
+|9|Very less times spent on a label|48|15|74|
 |10|Milestones with fewer issues|0|0|0|
 |11|Milestone with too many issues|0|0|0|
 
@@ -183,10 +183,10 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 
 Sample data table :
 
-|S.No|Week|Number of commits|
-|------|-------|--------------|
-|1|Week 1|2|
-|2|Week 2|7|
+|S.No|Week|Number of commits|Bad Smell|
+|------|-------|--------------|--------|
+|1|Week 1|2|False|
+|2|Week 2|7|False|
 
 
 **2. No passenger**
@@ -222,8 +222,8 @@ Sample data table :
 
 |S.No|Issue Number|Closed On|Due On|Exceeded|
 |------|-------|--------------|--------------|-------|
-|1|Issue1|2/25/2015 22:04|3/3/2015 5:00|FALSE|
-|2|Issue2|3/15/2015 18:19|3/3/2015 5:00|TRUE|
+|1|Issue1|2/25/2015 22:04|3/3/2015 5:00|False|
+|2|Issue2|3/15/2015 18:19|3/3/2015 5:00|True|
 
 **6. Label distribution**
 
@@ -231,14 +231,32 @@ Sample data table :
 
 |S.No|Label|Number of issues|Bad smell|
 |------|-------|--------------|---------|
-|1|L1|14|TRUE|
-|2|L2|9|FALSE|
+|1|L1|14|True|
+|2|L2|9|False|
 
 **7. Milestones overdue**
 
 **8. Too much time spent on a label**
 
+Sample data table :
+
+|S.No|Issue Number|Label|Hours spent|Over|
+|------|-------|--------------|--------|----------|
+|1|Issue1|L1|267.83|False|
+|2|Issue3|L3|912.27|True|
+|||L4|21.47|False|
+|||L5|48.27|False|
+
 **9. Very less times spent on a label**
+
+Sample data table :
+
+|S.No|Issue Number|Label|Hours spent|Under|
+|------|-------|--------------|--------|----------|
+|1|Issue1|L1|267.83|False|
+|2|Issue3|L3|912.27|False|
+|||L4|1.47|True|
+|||L5|48.27|False|
 
 **10. Milestones with fewer issues**
 
@@ -296,11 +314,15 @@ In this feature we have analzed expected closing time and the actual closing tim
 In this feature we have analyzed the time spent by each issues in differen labels so as to determine there were no labels on which most of the issues spent most of the time.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Over used label](Data/Label-Unlabeled%20Time_Up.xlsx)
 
 **9. Very less times spent on a label**
 In this feature we have analyzed the time spent by each issue in different labels so as to determine that there were no labels on which most of the isssue spent very less time.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Under used label](Data/Label-Unlabeled%20Time_Down.xlsx)
 
 **10. Milestones with fewer issues**
 In this feature we have analyzed the number of issues per milestone so as to determine that there are no milestone with zero or very few issues.
