@@ -167,8 +167,8 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 |S.No|Feature|Project1|Project2|Project3|
 |------|-------|--------------|--------------|--------------|
 |1|Commit Distribution|12|12|12|
-|2|No passenger|0|0|0|
-|3|No great dictator|0|0|0|
+|2|No passenger|5|5|4|
+|3|No great dictator|5|5|4|
 |4|Assignment of issues|0|0|0|
 |5|Issues skipped|0|0|0|
 |6|Overused label|0|0|0|
@@ -191,7 +191,21 @@ Sample data table :
 
 **2. No passenger**
 
+Sample data table :
+
+|S.No|User|Commit percentage|Passenger|
+|------|-------|--------------|---------|
+|1|User1|19.8|False|
+|2|User2|20.79|False|
+
 **3. No great dictator**
+
+Sample data table :
+
+|S.No|User|Commit percentage|Dictator|
+|------|-------|--------------|---------|
+|1|User1|19.8|False|
+|2|User2|20.79|False|
 
 **4. Assignment of issues**
 
@@ -221,11 +235,15 @@ The following is the link to data collected. There are three different sheets fo
 The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits 
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [No Passenger data](Data/Commit%20Percentage_Passenger.xlsx)
 
 **3. No great dictator**
 The idea behind this feature was to determine the commit distribution of each user so that there are no great dictators(one person with most of the commits).
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [No dictator Data](Data/Commit%20Percentage_Dictator.xlsx)
 
 **4. Assignment of issues**
 In this feature we wanted to check how many issues are assigned and how many issues are closed without any assignee.
