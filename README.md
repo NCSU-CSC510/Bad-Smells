@@ -166,21 +166,29 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 ##Data
 |S.No|Feature|Project1|Project2|Project3|
 |------|-------|--------------|--------------|--------------|
-|1|Commit Distribution|0|0|0|
+|1|Commit Distribution|12|12|12|
 |2|No passenger|0|0|0|
 |3|No great dictator|0|0|0|
 |4|Assignment of issues|0|0|0|
 |5|Issues skipped|0|0|0|
 |6|Overused label|0|0|0|
-|7|Unused labels|0|0|0|
+|7|Milestones overdue|0|0|0|
 |8|Too much time spent on a label|-|-|-|
 |9|Very less times spent on a label|0|0|0|
-|10|Milestones overdue|0|0|0|
-|11|Milestone issues|0|0|0|
+|10|Milestones with fewer issues|0|0|0|
+|11|Milestone with too many issues|0|0|0|
 
 ##Data Samples
 **1. Commit Distribution**
 
+Sample data table :
+
+|S.No|Week|Number of commits|
+|------|-------|--------------|
+|1|Week 1|2|
+|2|Week 2|7|
+
+
 **2. No passenger**
 
 **3. No great dictator**
@@ -189,79 +197,142 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 
 **5. Issues skipped**
 
-**6. No overused label**
+**6. Label distribution**
 
-**7. Redundant/useless labels**
+**7. Milestones overdue**
 
 **8. Too much time spent on a label**
 
 **9. Very less times spent on a label**
 
-**10. Milestones overdue**
+**10. Milestones with fewer issues**
 
-**11. Milestone issues**
+**11. Milestone with too many issues**
 
 ##Feature Detection and Results
 **1. Commit Distribution**
-In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines. 
+In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines.
+
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Commit Distribution](Data/Commit%20Distribution.xlsx)
 
 **2. No passenger**
 The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits 
-Results :
+
+***Results :***
 
 **3. No great dictator**
 The idea behind this feature was to determine the commit distribution of each user so that there are no great dictators(one person with most of the commits).
-Results :
+
+***Results :***
 
 **4. Assignment of issues**
 In this feature we wanted to check how many issues are assigned and how many issues are closed without any assignee.
-Results :
+
+***Results :***
 
 **5. Issues skipped**
 In this feature we wanted to check the expected completion time and the actual completion time of each issue.
-Results :
 
-**6.Overused label**
-In this feature we wanted to analyze the 
+***Results :***
 
-**7. Unused labels**
-In this feature we have analzed the time spent by each issue in a particulart label and check if this time was too short so that there this label was redundant or useless.
-Results :
+**6. Label distribution**
+In this feature we wanted to analyze the number of issues per label so as to determine if any label is overused or unused.
+
+***Results :***
+
+**7. Milestones overdue**
+In this feature we have analzed expected closing time and the actual closing time for each milestone.
+
+***Results :***
 
 **8. Too much time spent on a label**
+In this feature we have analyzed the time spent by each issues in differen labels so as to determine there were no labels on which most of the issues spent most of the time.
+
+***Results :***
 
 **9. Very less times spent on a label**
+In this feature we have analyzed the time spent by each issue in different labels so as to determine that there were no labels on which most of the isssue spent very less time.
 
-**10. Milestones overdue**
+***Results :***
 
-**11. Milestone issues**
+**10. Milestones with fewer issues**
+In this feature we have analyzed the number of issues per milestone so as to determine that there are no milestone with zero or very few issues.
+
+***Results :***
+
+**11. Milestone with too many issues**
+In this feature we have analyzed the number of issues per milestone so as to determine the milestone which had most of the issues attached with them
+
+***Results :***
 
 ##Bad Smells Detector and Results
 **1. Commit Distribution**
 
+***Results :***
+
 **2. No passenger**
+
+***Results :***
 
 **3. No great dictator**
 
+***Results :***
+
 **4. Assignment of issues**
+
+***Results :***
 
 **5. Issues skipped**
 
-**6. No overused label**
+***Results :***
 
-**7. Redundant/useless labels**
+**6. Label**
+
+***Results :***
+
+**7. Milestones overdue**
+
+***Results :***
 
 **8. Too much time spent on a label**
 
+***Results :***
+
 **9. Very less times spent on a label**
 
-**10. Milestones overdue**
+***Results :***
 
-**11. Milestone issues**
+**10. Milestones with fewer issues**
 
+***Results :***
+
+**11. Milestone with too many issues**
+
+***Results :***
 
 ##Early Warning
+We have created a detector that detects if a developer is overloaded or underloaded with respect to the number of issues assigned to him/her.
+
+###Algorithm:
+1. Group the data by week such that (W0<W1<W2..Wi)
+where W0 = week the project began ,
+Wi = current week
+
+2. Calculate issues assigned to the assignees on a per week basis.
+
+3. For week W0, calculate the mean(M0) of the issues assigned .
+
+4. Use this value to analyze the work distribution for week W1.
+
+5. If the number of issues assigned to an assignee Ai is greater than M0, it is likely that Ai is overloaded.
+
+6. On the other hand,if the number of issues assigned to an assignee Ai is lesser than M0, it is likely that Ai is underloaded and take on more work.
+
+###Usage
+
+This detector can be used to catch any uneven distribution of work among the team early on. It can be used to prevent the situation where there is a dictator or passenger in the team.
 
 ##Early Warning Results
 
