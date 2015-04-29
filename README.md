@@ -164,7 +164,6 @@ To anonymize the data, we numbered each project as P1, P2 and P3 and also number
 After the data collection phase, we have stored the data in a excel spreadsheet. The data for each project was anonymized based on the above mentioned scheme. Also, the data was separated based on the features as presented below. After categorizing the data into different features, we calculated the mean and the statndard deviation for each project per feature. The data was analyzed and all the values which differ the mean by 1.5 times the standard deviation were marked. After analyzing the data, we have plotted graphs for each feature.
 
 ##Data
-Following is the summary of the data collected. 
 |S.No|Feature|Project1|Project2|Project3|
 |------|-------|--------------|--------------|--------------|
 |1|Commit Distribution|12|12|12|
@@ -181,6 +180,7 @@ Following is the summary of the data collected.
 
 ##Data Samples
 **1. Commit Distribution**
+
 Sample data table :
 
 |S.No|Week|Number of commits|
@@ -214,7 +214,7 @@ Sample data table :
 In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines.
 
 ***Results :***
-The following is the link to data collected. There three different sheets for each project.
+The following is the link to data collected. There are three different sheets for each project.
 * [Commit Distribution](Data/Commit%20Distribution.xlsx)
 
 **2. No passenger**
