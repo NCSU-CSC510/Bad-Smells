@@ -378,10 +378,10 @@ The results are represented as graphs below:
 	**Mean :** 8.33
 	**Std deviation :** 11.34
 
-	*Project 2*
-	![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P2.png)
-	**Mean :** 5.00
-	**Std deviation :** 5.03
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P2.png)
+**Mean :** 5.00
+**Std deviation :** 5.03
 	
 	*Project 3*
 	![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P3.png)
