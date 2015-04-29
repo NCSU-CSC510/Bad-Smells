@@ -428,6 +428,23 @@ The results are represented as graphs below:
 **11. Milestone with too many issues**
 
 ***Results :***
+The results are represented as graphs below:
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P1.png)
+**Mean :** 5.50
+**Std deviation :** 2.69
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P2.png)
+**Mean :** 2.75
+**Std deviation :** 2.05
+	
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P3.png)
+**Mean :** 7.80
+**Std deviation :** 4.62
+
 
 ##Early Warning
 We have created a detector that detects if a developer is overloaded or underloaded with respect to the number of issues assigned to him/her.
