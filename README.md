@@ -169,9 +169,9 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 |1|Commit Distribution|12|12|12|
 |2|No passenger|5|5|4|
 |3|No great dictator|5|5|4|
-|4|Assignment of issues|0|0|0|
-|5|Issues skipped|0|0|0|
-|6|Overused label|0|0|0|
+|4|Assignment of issues|27|30|60|
+|5|Issues skipped|22|22|39|
+|6|Label distribution|8|23|14|
 |7|Milestones overdue|0|0|0|
 |8|Too much time spent on a label|-|-|-|
 |9|Very less times spent on a label|0|0|0|
@@ -209,9 +209,30 @@ Sample data table :
 
 **4. Assignment of issues**
 
+Sample data table :
+
+|S.No|Issue Number|Assignee present|
+|------|-------|--------------|---------|
+|1|Issue1|False|
+|2|Issue2|True|
+
 **5. Issues skipped**
 
+Sample data table :
+
+|S.No|Issue Number|Closed On|Due On|Exceeded|
+|------|-------|--------------|--------------|-------|
+|1|Issue1|2/25/2015 22:04|3/3/2015 5:00|FALSE|
+|2|Issue2|3/15/2015 18:19|3/3/2015 5:00|TRUE|
+
 **6. Label distribution**
+
+Sample data table :
+
+|S.No|Label|Number of issues|Bad smell|
+|------|-------|--------------|---------|
+|1|L1|14|TRUE|
+|2|L2|9|FALSE|
 
 **7. Milestones overdue**
 
@@ -249,16 +270,22 @@ The following is the link to data collected. There are three different sheets fo
 In this feature we wanted to check how many issues are assigned and how many issues are closed without any assignee.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Issue Assignment](Data/Issue%20Assignee.xlsx)
 
 **5. Issues skipped**
 In this feature we wanted to check the expected completion time and the actual completion time of each issue.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Issue Skipped](Data/Issues%20Skipped.xlsx)
 
 **6. Label distribution**
 In this feature we wanted to analyze the number of issues per label so as to determine if any label is overused or unused.
 
 ***Results :***
+The following is the link to data collected. There are three different sheets for each project.
+* [Label Distribution](Data/Label%20Distribution.xlsx)
 
 **7. Milestones overdue**
 In this feature we have analzed expected closing time and the actual closing time for each milestone.
