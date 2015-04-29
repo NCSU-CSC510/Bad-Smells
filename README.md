@@ -303,6 +303,26 @@ In this feature we have analyzed the number of issues per milestone so as to det
 ***Results :***
 
 ##Early Warning
+We have created a detector that detects if a developer is overloaded or underloaded with respect to the number of issues assigned to him/her.
+
+###Algorithm:
+1. Group the data by week such that (W0<W1<W2..Wi)
+where W0 = week the project began ,
+Wi = current week
+
+2. Calculate issues assigned to the assignees on a per week basis.
+
+3. For week W0, calculate the mean(M0) of the issues assigned .
+
+4. Use this value to analyze the work distribution for week W1.
+
+5. If the number of issues assigned to an assignee Ai is greater than M0, it is likely that Ai is overloaded.
+
+6. On the other hand,if the number of issues assigned to an assignee Ai is lesser than M0, it is likely that Ai is underloaded and take on more work.
+
+###Usage
+
+This detector can be used to catch any uneven distribution of work among the team early on. It can be used to prevent the situation where there is a dictator or passenger in the team.
 
 ##Early Warning Results
 
