@@ -409,8 +409,23 @@ As all the percentages were more than 10%, there was no bad smell, in this featu
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
 
 **3. No great dictator**
+In this feature we have collected data about number of commits per user. So if the number of commits is more than 60% of the total, then that user is under "great dictator" category.
 
+<br>*Criteria:*
+
+        no_of_commits > 0.6 * total_commits
 ***Results :***
+The results are represented as graphs below:
+As all the percentages were more than 10%, there was no bad smell, in this feature.
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
 
 **4. Assignment of issues**
 
