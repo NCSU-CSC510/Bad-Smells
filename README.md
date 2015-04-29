@@ -444,7 +444,16 @@ The results are represented as graphs below
 **5. Issues skipped**
 
 ***Results :***
+The results are represented as graphs below
 
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p3.png)
 **6. Label**
 
 ***Results :***
