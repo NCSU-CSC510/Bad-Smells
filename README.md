@@ -430,6 +430,16 @@ As all the percentages were more than 10%, there was no bad smell, in this featu
 **4. Assignment of issues**
 
 ***Results :***
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p3.png)
 
 **5. Issues skipped**
 
