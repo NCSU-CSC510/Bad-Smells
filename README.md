@@ -373,6 +373,7 @@ In this feature we have collected data about number of commits per week. So if t
         OR  no_of_commits < mean + 1.5 * standard_deviation
 ***Results :***
 The results are represented as graphs below:
+
 *Project 1*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P1.png)
 **Mean :** 8.33
