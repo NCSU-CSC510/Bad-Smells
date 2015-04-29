@@ -272,7 +272,7 @@ Sample data table :
 
 |S.No|Milestone|No. of Issues|Under|
 |------|-------|--------------|------------|-------|
-|1|Milestone 1||1|True|
+|1|Milestone 1|1|True|
 |2|Milestone 2|6|False|
 
 
@@ -282,7 +282,7 @@ Sample data table :
 
 |S.No|Milestone|No. of Issues|Over|
 |------|-------|--------------|------------|-------|
-|1|Milestone 1||1|False|
+|1|Milestone 1|1|False|
 |2|Milestone 2|6|True|
 
 ##Feature Detection and Results
