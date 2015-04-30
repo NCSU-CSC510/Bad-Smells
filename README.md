@@ -414,6 +414,7 @@ In this feature we have collected data about number of commits per user. So if t
 <br>*Criteria:*
 
         no_of_commits > 0.6 * total_commits
+
 ***Results :***
 The results are represented as graphs below:
 As all the percentages were more than 10%, there was no bad smell, in this feature.
@@ -428,6 +429,7 @@ As all the percentages were more than 10%, there was no bad smell, in this featu
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
 
 **4. Assignment of issues**
+In this feature we have analyed if all the issues are assigned to some user or not. If any issue is not assigned to any user and is closed, then it is a bad smell.
 
 ***Results :***
 The results are represented as graphs below
@@ -442,6 +444,7 @@ The results are represented as graphs below
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p3.png)
 
 **5. Issues skipped**
+In this feature we have analyzed if the issues were closed before the expected time or not. If any issue is not closed before the expected completion time then it is a bad smell.
 
 ***Results :***
 The results are represented as graphs below
@@ -456,7 +459,13 @@ The results are represented as graphs below
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p3.png)
 
 **6. Label Distribution**
+In this feature we have determined the number of issues assigned to a particular label. If any label has issues more than mean by 1.5 times the standard deviation, then it is a bad smell. Same is the case with labels with less or no issues. If the number of issues to a label is less than mean by 1.5 times standard deviation it is a bad smell.
 
+<br>*Criteria:*
+
+        no_of_issues > mean + 1.5 * std_deviation
+        OR no_of_issues < mean - 1.5 * std_deviation
+        
 ***Results :***
 The results are represented as graphs below
 
@@ -479,6 +488,7 @@ The results are represented as graphs below
 **Std deviation :** 5.31
 
 **7. Milestones overdue**
+In this feature we have analyzed how many milestones were closed before due date and how many milstone were closed after due date. If milestones are not closed before the expected due date, then it is a bad smell.
 
 ***Results :***
 
@@ -508,6 +518,11 @@ The results are represented as graphs below
 
 
 **10. Milestones with fewer issues**
+In this featue we analyzed the number of issues assigned to a particular milestone. If any milestone has issues less than mean by 1.5 times standard deviation, then it is a bad smell.
+
+<br>*Criteria:*
+
+        no_of_issues_in_milestone < mean + 1.5 * std_deviation
 
 ***Results :***
 
@@ -532,7 +547,12 @@ The results are represented as graphs below
 **Std deviation :** 4.62
 
 **11. Milestone with too many issues**
+In this featue we analyzed the number of issues assigned to a particular milestone. If any milestone has issues more than mean by 1.5 times standard deviation, then it is a bad smell.
 
+<br>*Criteria:*
+
+        no_of_issues_in_milestone > mean + 1.5 * std_deviation
+        
 ***Results :***
 
 The results are represented as graphs below
