@@ -12,7 +12,7 @@
   Data for each project being analysed is stored in a seperate [Project-name].json file.
 
   Code snippet used to query this data is as below:
-  ```nodejs
+  ```javascript
   return new Promise(function(resolve, reject) {
 		request({
 			url: "https://api.github.com/repos/[Project-name]]/issues/events?page=" + num,
@@ -38,7 +38,7 @@
 
     The data is grouped by issues for each project and analysis is performed.
 
-    ```nodejs
+    ```javascript
     for(var i = 0; i < projectArr.length; i++) {
     	console.log(projectArr[i].project);
     	var issues = new LINQ(projectArr[i].issues);
@@ -60,7 +60,7 @@
 
   The data is grouped by labels for each project and analysis is performed.
 
-  ```nodejs
+  ```javascript
   for(var i = 0; i < issuesArr.length; i++) {
   	console.log(issuesArr[i].project);
   	var issues = new LINQ(issuesArr[i].issues);
@@ -91,7 +91,7 @@
 
   For this category of bad smells detector,the scripts [commits.js](Scraper/commits.js) is used
 
-  ```nodejs
+  ```javascript
   for(var i = 0; i < commitsArr.length; i++) {
   	var commits = commitsArr[i];
   	var commitPerc = {};
@@ -126,7 +126,7 @@
 
   For this category of bad smells detector,the script [milestone-issues.js](Bad Smells/milestone-issues.js) is used
 
-  ```nodejs
+  ```javascript
   for(var i = 0; i < projectArr.length; i++) {
   	console.log(projectArr[i].project);
   	var issues = new LINQ(projectArr[i].issues);
