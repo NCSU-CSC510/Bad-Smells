@@ -541,20 +541,38 @@ The results are represented as graphs below
 Script can be found [here](Bad Smells/milestone-issues.js)
 
 **8. Too much time spent on a label**
+In this feature, we wanted to deterimine the time spent by each issue in different labels. If the time spent issue in any label is more then mean by 1.5 times the standard deviation, then it is a bad smell.
+
+<br>*Criteria:*
+
+        time_spent_on_label > mean + 1.5 * std_deviation
 
 ***Results :***
 
+The resultant data for this bad smell is present on the below link.
 
+* [Too much time spent](Data/Label-Unlabeled%20Time_Up.xlsx)
 
+**Mean :** 286.65 Hrs
+**Std deviation :** 322.06 Hrs
 
 Script can be found [here](Bad Smells/label-time.js)
 
 **9. Very less times spent on a label**
+In this feature, we wanted to deterimine the time spent by each issue in different labels. If the time spent issue in any label is less than mean by 1.5 times the standard deviation, then it is a bad smell.
 
+<br>*Criteria:*
+
+        time_spent_on_label < mean + 1.5 * std_deviation
+        
 ***Results :***
 
+The resultant data for this bad smell is present on the below link.
 
+* [Very less time spent](Data/Label-Unlabeled%20Time_Down.xlsx)
 
+**Mean :** 286.65 Hrs
+**Std deviation :** 322.06 Hrs
 
 Script can be found [here](Bad Smells/label-time.js)
 
