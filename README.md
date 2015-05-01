@@ -164,6 +164,7 @@ To anonymize the data, we numbered each project as P1, P2 and P3 and also number
 After the data collection phase, we have stored the data in a excel spreadsheet. The data for each project was anonymized based on the above mentioned scheme. Also, the data was separated based on the features as presented below. After categorizing the data into different features, we calculated the mean and the statndard deviation for each project per feature. The data was analyzed and all the values which differ the mean by 1.5 times the standard deviation were marked. After analyzing the data, we have plotted graphs for each feature.
 
 ##Data
+
 |S.No|Feature|Project1|Project2|Project3|
 |------|-------|--------------|--------------|--------------|
 |1|Commit Distribution|12|12|12|
@@ -179,6 +180,7 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 |11|Milestone with too many issues|4|8|5|
 
 ##Data Samples
+
 **1. Commit Distribution**
 
 Sample data table :
@@ -188,6 +190,7 @@ Sample data table :
 |1|Week 1|2|False|
 |2|Week 2|7|False|
 
+Actual data is [here](Data/Commit Distribution.xlsx)
 
 **2. No passenger**
 
@@ -198,6 +201,9 @@ Sample data table :
 |1|User1|19.8|False|
 |2|User2|20.79|False|
 
+
+Actual data is [here](Data/Commit Percentage_Passenger.xlsx)
+
 **3. No great dictator**
 
 Sample data table :
@@ -206,6 +212,8 @@ Sample data table :
 |------|-------|--------------|---------|
 |1|User1|19.8|False|
 |2|User2|20.79|False|
+
+Actual data is [here](Data/Commit Percentage_Dictator.xlsx)
 
 **4. Assignment of issues**
 
@@ -216,6 +224,8 @@ Sample data table :
 |1|Issue1|False|
 |2|Issue2|True|
 
+Actual data is [here](Data/Issue Assignee.xlsx)
+
 **5. Issues skipped**
 
 Sample data table :
@@ -224,6 +234,8 @@ Sample data table :
 |------|-------|--------------|--------------|-------|
 |1|Issue1|2/25/2015 22:04|3/3/2015 5:00|False|
 |2|Issue2|3/15/2015 18:19|3/3/2015 5:00|True|
+
+Actual data is [here](Data/Issues Skipped.xlsx)
 
 **6. Label distribution**
 
@@ -234,6 +246,8 @@ Sample data table :
 |1|L1|14|True|
 |2|L2|9|False|
 
+Actual data is [here](Data/Label Distribution.xlsx)
+
 **7. Milestones overdue**
 
 Sample data table :
@@ -243,6 +257,7 @@ Sample data table :
 |1|Milestone 1||3/15/2015 4:00|3/30/2015 5:39|True|
 |2|Milestone 2|3/31/2015 4:00|4/1/2015 5:58|True|
 
+Actual data is [here](Data/Milestone Skipped.xlsx)
 
 **8. Too much time spent on a label**
 
@@ -255,6 +270,8 @@ Sample data table :
 |||L4|21.47|False|
 |||L5|48.27|False|
 
+Actual data is [here](Data/Label-Unlabeled Time_Up.xlsx)
+
 **9. Very less times spent on a label**
 
 Sample data table :
@@ -266,6 +283,8 @@ Sample data table :
 |||L4|1.47|True|
 |||L5|48.27|False|
 
+Actual data is [here](Data/Label-Unlabeled Time_Down.xlsx)
+
 **10. Milestones with fewer issues**
 
 Sample data table :
@@ -275,6 +294,7 @@ Sample data table :
 |1|Milestone 1|1|True|
 |2|Milestone 2|6|False|
 
+Actual data is [here](Data/Milestones Issues_Under.xlsx)
 
 **11. Milestone with too many issues**
 
@@ -285,6 +305,8 @@ Sample data table :
 |1|Milestone 1|1|False|
 |2|Milestone 2|6|True|
 
+Actual data is [here](Data/Milestones Issues_Above.xlsx)
+
 ##Feature Detection and Results
 **1. Commit Distribution**
 In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines.
@@ -294,7 +316,7 @@ The following is the link to data collected. There are three different sheets fo
 * [Commit Distribution](Data/Commit%20Distribution.xlsx)
 
 **2. No passenger**
-The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits 
+The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits
 
 ***Results :***
 The following is the link to data collected. There are three different sheets for each project.
@@ -369,7 +391,7 @@ In this feature we have collected data about number of commits per week. So if t
 
 <br>*Criteria:*
 
-        no_of_commits > mean + 1.5 * standard_deviation 
+        no_of_commits > mean + 1.5 * standard_deviation
         OR  no_of_commits < mean + 1.5 * standard_deviation
 ***Results :***
 The results are represented as graphs below:
@@ -383,7 +405,7 @@ The results are represented as graphs below:
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P2.png)
 **Mean :** 5.00
 **Std deviation :** 5.03
-	
+
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P3.png)
 **Mean :** 8.42
@@ -465,7 +487,7 @@ In this feature we have determined the number of issues assigned to a particular
 
         no_of_issues > mean + 1.5 * std_deviation
         OR no_of_issues < mean - 1.5 * std_deviation
-        
+
 ***Results :***
 The results are represented as graphs below
 
@@ -552,7 +574,7 @@ In this featue we analyzed the number of issues assigned to a particular milesto
 <br>*Criteria:*
 
         no_of_issues_in_milestone > mean + 1.5 * std_deviation
-        
+
 ***Results :***
 
 The results are represented as graphs below
@@ -599,6 +621,3 @@ Wi = current week
 This detector can be used to catch any uneven distribution of work among the team early on. It can be used to prevent the situation where there is a dictator or passenger in the team.
 
 ##Early Warning Results
-
-
-
