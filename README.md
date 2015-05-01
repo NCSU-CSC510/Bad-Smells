@@ -700,6 +700,7 @@ Mean 1.2
 		
 **Week 4**		
 Mean 1.2
+
 |User|Isses #|Bad Smell|
 |------|-------|--------------|	
 |User1|0|FALSE|
