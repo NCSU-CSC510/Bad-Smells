@@ -709,3 +709,7 @@ Mean 1.2
 |User4|0|FALSE|
 |User5|1|FALSE|
 
+Here in project P1, Week2, User2 was overloaded with issues.
+Here in project P2, Week4, User2 was overloaded with issues.
+
+These and similar events may indicate the projects may be misplanned or in trouble.
