@@ -401,6 +401,7 @@ The results are represented as graphs below:
 **Mean :** 8.33
 **Std deviation :** 11.34
 
+
 *Project 2*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P2.png)
 **Mean :** 5.00
@@ -410,6 +411,8 @@ The results are represented as graphs below:
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P3.png)
 **Mean :** 8.42
 **Std deviation :** 13.84
+
+Scripts are found [here](Scraper/commits.js)
 
 **2. No passenger**
 In this feature we have collected data about number of commits per user. So if the number of commits is less than 10% of the total, then that user is under "no passenger" category.
@@ -429,6 +432,8 @@ As all the percentages were more than 10%, there was no bad smell, in this featu
 
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
+
+Scripts are found [here](Scraper/commits.js)
 
 **3. No great dictator**
 In this feature we have collected data about number of commits per user. So if the number of commits is more than 60% of the total, then that user is under "great dictator" category.
@@ -450,6 +455,8 @@ As all the percentages were more than 10%, there was no bad smell, in this featu
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
 
+Scripts are found [here](Scraper/commits.js)
+
 **4. Assignment of issues**
 In this feature we have analyed if all the issues are assigned to some user or not. If any issue is not assigned to any user and is closed, then it is a bad smell.
 
@@ -465,6 +472,8 @@ The results are represented as graphs below
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p3.png)
 
+Scripts are found [here](Bad Smells/issues-assigned.js)
+
 **5. Issues skipped**
 In this feature we have analyzed if the issues were closed before the expected time or not. If any issue is not closed before the expected completion time then it is a bad smell.
 
@@ -479,6 +488,8 @@ The results are represented as graphs below
 
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p3.png)
+
+Scripts are found [here](Bad Smells/issues-skipped.js)
 
 **6. Label Distribution**
 In this feature we have determined the number of issues assigned to a particular label. If any label has issues more than mean by 1.5 times the standard deviation, then it is a bad smell. Same is the case with labels with less or no issues. If the number of issues to a label is less than mean by 1.5 times standard deviation it is a bad smell.
@@ -509,6 +520,8 @@ The results are represented as graphs below
 **Mean :** 4.36
 **Std deviation :** 5.31
 
+Scripts are found [here](Bad Smells/label-distributon.js)
+
 **7. Milestones overdue**
 In this feature we have analyzed how many milestones were closed before due date and how many milstone were closed after due date. If milestones are not closed before the expected due date, then it is a bad smell.
 
@@ -525,6 +538,8 @@ The results are represented as graphs below
 *Project 3*
 ![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/milestones_skipped/Milestones_skipped_p3.png)
 
+Script can be found [here](Bad Smells/milestone-issues.js)
+
 **8. Too much time spent on a label**
 
 ***Results :***
@@ -532,12 +547,16 @@ The results are represented as graphs below
 
 
 
+Script can be found [here](Bad Smells/label-time.js)
+
 **9. Very less times spent on a label**
 
 ***Results :***
 
 
 
+
+Script can be found [here](Bad Smells/label-time.js)
 
 **10. Milestones with fewer issues**
 In this featue we analyzed the number of issues assigned to a particular milestone. If any milestone has issues less than mean by 1.5 times standard deviation, then it is a bad smell.
@@ -568,6 +587,8 @@ The results are represented as graphs below
 **Mean :** 7.80
 **Std deviation :** 4.62
 
+Script can be found [here](Bad Smells/milestone-issues.js)
+
 **11. Milestone with too many issues**
 In this featue we analyzed the number of issues assigned to a particular milestone. If any milestone has issues more than mean by 1.5 times standard deviation, then it is a bad smell.
 
@@ -597,6 +618,7 @@ The results are represented as graphs below
 **Mean :** 7.80
 **Std deviation :** 4.62
 
+Scripts can be found [here](Bad Smells/milestone-issues.js)
 
 ##Early Warning
 We have created a detector that detects if a developer is overloaded or underloaded with respect to the number of issues assigned to him/her.
