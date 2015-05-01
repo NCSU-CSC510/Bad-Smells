@@ -643,3 +643,50 @@ Wi = current week
 This detector can be used to catch any uneven distribution of work among the team early on. It can be used to prevent the situation where there is a dictator or passenger in the team.
 
 ##Early Warning Results
+
+**P1**  
+**Week 1**  
+Mean 0
+
+|User|Isses #|Bad Smell|
+|------|-------|--------------|
+|User1|0|FALSE|
+|User2|0|FALSE|
+|User3|0|FALSE|
+|User4|0|FALSE|
+|User4|0|FALSE|
+		
+**Week 2**  
+Mean 0
+
+|User|Isses #|Bad Smell|
+|------|-------|--------------|	
+|User1|1|FALSE|
+|User2|4|**TRUE**|
+|User3|0|FALSE|
+|User4|1|FALSE|
+|User4|0|FALSE|
+
+**P2**
+
+**Week 3**  
+Mean 1.2
+
+|User|Isses #|Bad Smell|
+|------|-------|--------------|	
+|User1|0|FALSE|
+|User2|3|FALSE|
+|User3|1|FALSE|
+|User4|1|FALSE|
+|User5|1|FALSE|
+		
+**Week 4**		
+Mean 1.2
+|User|Isses #|Bad Smell|
+|------|-------|--------------|	
+|User1|0|FALSE|
+|User2|4|TRUE|
+|User3|1|FALSE|
+|User4|0|FALSE|
+|User5|1|FALSE|
+
