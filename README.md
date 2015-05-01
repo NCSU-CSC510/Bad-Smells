@@ -704,7 +704,7 @@ Mean 1.2
 |User|Isses #|Bad Smell|
 |------|-------|--------------|	
 |User1|0|FALSE|
-|User2|4|TRUE|
+|User2|4|**TRUE**|
 |User3|1|FALSE|
 |User4|0|FALSE|
 |User5|1|FALSE|
