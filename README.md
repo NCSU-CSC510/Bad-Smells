@@ -662,6 +662,8 @@ This detector can be used to catch any uneven distribution of work among the tea
 
 ##Early Warning Results
 
+Scripts are [here](Bad Smells/early-detector.js)
+
 **P1**  
 **Week 1**  
 Mean 0
