@@ -12,7 +12,7 @@
   Data for each project being analysed is stored in a seperate [Project-name].json file.
 
   Code snippet used to query this data is as below:
-  ```nodejs
+  ```javascript
   return new Promise(function(resolve, reject) {
 		request({
 			url: "https://api.github.com/repos/[Project-name]]/issues/events?page=" + num,
@@ -38,7 +38,7 @@
 
     The data is grouped by issues for each project and analysis is performed.
 
-    ```nodejs
+    ```javascript
     for(var i = 0; i < projectArr.length; i++) {
     	console.log(projectArr[i].project);
     	var issues = new LINQ(projectArr[i].issues);
@@ -60,7 +60,7 @@
 
   The data is grouped by labels for each project and analysis is performed.
 
-  ```nodejs
+  ```javascript
   for(var i = 0; i < issuesArr.length; i++) {
   	console.log(issuesArr[i].project);
   	var issues = new LINQ(issuesArr[i].issues);
@@ -91,7 +91,7 @@
 
   For this category of bad smells detector,the scripts [commits.js](Scraper/commits.js) is used
 
-  ```nodejs
+  ```javascript
   for(var i = 0; i < commitsArr.length; i++) {
   	var commits = commitsArr[i];
   	var commitPerc = {};
@@ -126,7 +126,7 @@
 
   For this category of bad smells detector,the script [milestone-issues.js](Bad Smells/milestone-issues.js) is used
 
-  ```nodejs
+  ```javascript
   for(var i = 0; i < projectArr.length; i++) {
   	console.log(projectArr[i].project);
   	var issues = new LINQ(projectArr[i].issues);
@@ -164,6 +164,7 @@ To anonymize the data, we numbered each project as P1, P2 and P3 and also number
 After the data collection phase, we have stored the data in a excel spreadsheet. The data for each project was anonymized based on the above mentioned scheme. Also, the data was separated based on the features as presented below. After categorizing the data into different features, we calculated the mean and the statndard deviation for each project per feature. The data was analyzed and all the values which differ the mean by 1.5 times the standard deviation were marked. After analyzing the data, we have plotted graphs for each feature.
 
 ##Data
+
 |S.No|Feature|Project1|Project2|Project3|
 |------|-------|--------------|--------------|--------------|
 |1|Commit Distribution|12|12|12|
@@ -179,6 +180,7 @@ After the data collection phase, we have stored the data in a excel spreadsheet.
 |11|Milestone with too many issues|4|8|5|
 
 ##Data Samples
+
 **1. Commit Distribution**
 
 Sample data table :
@@ -188,6 +190,7 @@ Sample data table :
 |1|Week 1|2|False|
 |2|Week 2|7|False|
 
+Actual data is [here](Data/Commit Distribution.xlsx)
 
 **2. No passenger**
 
@@ -198,6 +201,9 @@ Sample data table :
 |1|User1|19.8|False|
 |2|User2|20.79|False|
 
+
+Actual data is [here](Data/Commit Percentage_Passenger.xlsx)
+
 **3. No great dictator**
 
 Sample data table :
@@ -206,6 +212,8 @@ Sample data table :
 |------|-------|--------------|---------|
 |1|User1|19.8|False|
 |2|User2|20.79|False|
+
+Actual data is [here](Data/Commit Percentage_Dictator.xlsx)
 
 **4. Assignment of issues**
 
@@ -216,6 +224,8 @@ Sample data table :
 |1|Issue1|False|
 |2|Issue2|True|
 
+Actual data is [here](Data/Issue Assignee.xlsx)
+
 **5. Issues skipped**
 
 Sample data table :
@@ -224,6 +234,8 @@ Sample data table :
 |------|-------|--------------|--------------|-------|
 |1|Issue1|2/25/2015 22:04|3/3/2015 5:00|False|
 |2|Issue2|3/15/2015 18:19|3/3/2015 5:00|True|
+
+Actual data is [here](Data/Issues Skipped.xlsx)
 
 **6. Label distribution**
 
@@ -234,6 +246,8 @@ Sample data table :
 |1|L1|14|True|
 |2|L2|9|False|
 
+Actual data is [here](Data/Label Distribution.xlsx)
+
 **7. Milestones overdue**
 
 Sample data table :
@@ -243,6 +257,7 @@ Sample data table :
 |1|Milestone 1||3/15/2015 4:00|3/30/2015 5:39|True|
 |2|Milestone 2|3/31/2015 4:00|4/1/2015 5:58|True|
 
+Actual data is [here](Data/Milestone Skipped.xlsx)
 
 **8. Too much time spent on a label**
 
@@ -255,6 +270,8 @@ Sample data table :
 |||L4|21.47|False|
 |||L5|48.27|False|
 
+Actual data is [here](Data/Label-Unlabeled Time_Up.xlsx)
+
 **9. Very less times spent on a label**
 
 Sample data table :
@@ -266,6 +283,8 @@ Sample data table :
 |||L4|1.47|True|
 |||L5|48.27|False|
 
+Actual data is [here](Data/Label-Unlabeled Time_Down.xlsx)
+
 **10. Milestones with fewer issues**
 
 Sample data table :
@@ -275,6 +294,7 @@ Sample data table :
 |1|Milestone 1|1|True|
 |2|Milestone 2|6|False|
 
+Actual data is [here](Data/Milestones Issues_Under.xlsx)
 
 **11. Milestone with too many issues**
 
@@ -285,6 +305,8 @@ Sample data table :
 |1|Milestone 1|1|False|
 |2|Milestone 2|6|True|
 
+Actual data is [here](Data/Milestones Issues_Above.xlsx)
+
 ##Feature Detection and Results
 **1. Commit Distribution**
 In this feature we analyzed the commit data for each project on a week basis. The idea was to determine the commit ditribution over the project timelines.
@@ -294,7 +316,7 @@ The following is the link to data collected. There are three different sheets fo
 * [Commit Distribution](Data/Commit%20Distribution.xlsx)
 
 **2. No passenger**
-The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits 
+The idea behind this feature was to analyze the commit percentage of each user so that there are no passengers who have very less number of commits
 
 ***Results :***
 The following is the link to data collected. There are three different sheets for each project.
@@ -365,48 +387,238 @@ The following is the link to data collected. There are three different sheets fo
 
 ##Bad Smells Detector and Results
 **1. Commit Distribution**
+In this feature we have collected data about number of commits per week. So if the number of commits differ the mean by 1.5 times the standard deviation, we mark it as bad smell.
 
+<br>*Criteria:*
+
+        no_of_commits > mean + 1.5 * standard_deviation
+        OR  no_of_commits < mean + 1.5 * standard_deviation
 ***Results :***
+The results are represented as graphs below:
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P1.png)
+**Mean :** 8.33
+**Std deviation :** 11.34
+
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P2.png)
+**Mean :** 5.00
+**Std deviation :** 5.03
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/num_of_commits/NumOfCommits_P3.png)
+**Mean :** 8.42
+**Std deviation :** 13.84
+
+Scripts are found [here](Scraper/commits.js)
 
 **2. No passenger**
+In this feature we have collected data about number of commits per user. So if the number of commits is less than 10% of the total, then that user is under "no passenger" category.
 
+<br>*Criteria:*
+
+        no_of_commits < 0.1 * total_commits
 ***Results :***
+The results are represented as graphs below:
+As all the percentages were more than 10%, there was no bad smell, in this feature.
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
+
+Scripts are found [here](Scraper/commits.js)
 
 **3. No great dictator**
+In this feature we have collected data about number of commits per user. So if the number of commits is more than 60% of the total, then that user is under "great dictator" category.
+
+<br>*Criteria:*
+
+        no_of_commits > 0.6 * total_commits
 
 ***Results :***
+The results are represented as graphs below:
+As all the percentages were more than 10%, there was no bad smell, in this feature.
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/commit_percentage/CommitPercentage_P3.png)
+
+Scripts are found [here](Scraper/commits.js)
 
 **4. Assignment of issues**
+In this feature we have analyed if all the issues are assigned to some user or not. If any issue is not assigned to any user and is closed, then it is a bad smell.
 
 ***Results :***
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_assigned/Issues_assigned_p3.png)
+
+Scripts are found [here](Bad Smells/issues-assigned.js)
 
 **5. Issues skipped**
+In this feature we have analyzed if the issues were closed before the expected time or not. If any issue is not closed before the expected completion time then it is a bad smell.
 
 ***Results :***
+The results are represented as graphs below
 
-**6. Label**
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Issues_exceeding_due_date/Issues_exceeding_due_date_p3.png)
+
+Scripts are found [here](Bad Smells/issues-skipped.js)
+
+**6. Label Distribution**
+In this feature we have determined the number of issues assigned to a particular label. If any label has issues more than mean by 1.5 times the standard deviation, then it is a bad smell. Same is the case with labels with less or no issues. If the number of issues to a label is less than mean by 1.5 times standard deviation it is a bad smell.
+
+<br>*Criteria:*
+
+        no_of_issues > mean + 1.5 * std_deviation
+        OR no_of_issues < mean - 1.5 * std_deviation
 
 ***Results :***
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/label_distribution/Project1.png)
+
+**Mean :** 7.00
+**Std deviation :** 3.43
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/label_distribution/Project2.png)
+
+**Mean :** 6.48
+**Std deviation :** 6.00
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/label_distribution/Project3.png)
+
+**Mean :** 4.36
+**Std deviation :** 5.31
+
+Scripts are found [here](Bad Smells/label-distributon.js)
 
 **7. Milestones overdue**
+In this feature we have analyzed how many milestones were closed before due date and how many milstone were closed after due date. If milestones are not closed before the expected due date, then it is a bad smell.
 
 ***Results :***
+
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/milestones_skipped/Milestones_skipped_p1.png)
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/milestones_skipped/Milestones_skipped_p2.png)
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/milestones_skipped/Milestones_skipped_p3.png)
+
+Script can be found [here](Bad Smells/milestone-issues.js)
 
 **8. Too much time spent on a label**
 
 ***Results :***
 
+
+
+
+Script can be found [here](Bad Smells/label-time.js)
+
 **9. Very less times spent on a label**
 
 ***Results :***
 
+
+
+
+Script can be found [here](Bad Smells/label-time.js)
+
 **10. Milestones with fewer issues**
+In this featue we analyzed the number of issues assigned to a particular milestone. If any milestone has issues less than mean by 1.5 times standard deviation, then it is a bad smell.
+
+<br>*Criteria:*
+
+        no_of_issues_in_milestone < mean + 1.5 * std_deviation
 
 ***Results :***
+
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P1.png)
+
+**Mean :** 5.50
+**Std deviation :** 2.69
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P2.png)
+
+**Mean :** 2.75
+**Std deviation :** 2.05
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P3.png)
+
+**Mean :** 7.80
+**Std deviation :** 4.62
+
+Script can be found [here](Bad Smells/milestone-issues.js)
 
 **11. Milestone with too many issues**
+In this featue we analyzed the number of issues assigned to a particular milestone. If any milestone has issues more than mean by 1.5 times standard deviation, then it is a bad smell.
+
+<br>*Criteria:*
+
+        no_of_issues_in_milestone > mean + 1.5 * std_deviation
 
 ***Results :***
+
+The results are represented as graphs below
+
+*Project 1*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P1.png)
+
+**Mean :** 5.50
+**Std deviation :** 2.69
+
+*Project 2*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P2.png)
+
+**Mean :** 2.75
+**Std deviation :** 2.05
+
+*Project 3*
+![](https://github.com/NCSU-CSC510/Bad-Smells/blob/master/graphs/Milestones_Issues/Milestones_Issues_P3.png)
+
+**Mean :** 7.80
+**Std deviation :** 4.62
+
+Scripts can be found [here](Bad Smells/milestone-issues.js)
 
 ##Early Warning
 We have created a detector that detects if a developer is overloaded or underloaded with respect to the number of issues assigned to him/her.
@@ -431,6 +643,3 @@ Wi = current week
 This detector can be used to catch any uneven distribution of work among the team early on. It can be used to prevent the situation where there is a dictator or passenger in the team.
 
 ##Early Warning Results
-
-
-
